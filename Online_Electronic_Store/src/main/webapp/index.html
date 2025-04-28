@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Electronics Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      overflow-x: hidden;
+    }
+
+    .header-shape {
+      position: relative;
+      background: #1e3c72;
+      height: 300px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header-shape h1 {
+      font-size: 36px;
+      font-weight: 600;
+      z-index: 1;
+    }
+
+    .custom-shape-divider-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .custom-shape-divider-bottom svg {
+      position: relative;
+      display: block;
+      width: calc(136% + 1.3px);
+      height: 100px;
+    }
+
+    .custom-shape-divider-bottom .shape-fill {
+      fill: #f8f9fa;
+    }
+
+    .card {
+      max-width: 500px;
+      margin: -100px auto 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #1e3c72;
+    }
+
+    .card a {
+      display: inline-block;
+      margin: 12px 10px;
+      padding: 14px 28px;
+      background-color: #ff6f61;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #e85c4c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-shape">
+    <h1><i>Online Electronics Store</i></h1>
+    <div class="custom-shape-divider-bottom">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,16.48c-72.56,19.5-147.15,35.07-223.4,46.26C643.68,77.84,559.15,81,475,76.63,365.12,70.89,256.45,45.34,146.92,30.18,99.14,23.3,49.8,18.88,0,20V0H1200V27.35C1131.22,9.73,1059.32-3.02,985.66,16.48Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Welcome to the Store</h2>
+    <a href="AdminLogin.html">Admin Login</a>
+    <a href="CustomerLogin.html">Customer Login</a>
+  </div>
+
+</body>
+</html>

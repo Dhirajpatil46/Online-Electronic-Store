@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Login</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        text-align: center;
+        padding: 100px 20px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    form {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        width: 100%;
+        max-width: 400px;
+    }
+    input[type="text"] {
+        padding: 12px;
+        margin: 10px 0;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+    }
+    input[type="submit"] {
+        padding: 12px 30px;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px;
+        background-color: #333;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+    a:hover {
+        background-color: #555;
+    }
+    footer {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Customer Login</h1>
+
+        <form action="CLog" method="post">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="uname" required><br><br>
+
+            <label for="upwd">Password</label>
+            <input type="text" name="upwd" id="upwd" required><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <br><h1><a href="AddUser.html">New User? Register Here</a></h1><br>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 YourCompany. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

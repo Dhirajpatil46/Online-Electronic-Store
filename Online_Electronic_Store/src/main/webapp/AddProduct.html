@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Entry Form</title>
+<style>
+    body {
+        background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .form-container {
+        background-color: white;
+        padding: 40px;
+        margin: 100px auto;
+        width: 400px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Product Entry Form</h1>
+        <form action="aps" method="post">
+            <label for="pCode">Product Code</label>
+            <input type="text" id="pCode" name="pCode">
+            
+            <label for="pName">Product Name</label>
+            <input type="text" id="pName" name="pName">
+            
+            <label for="pCompany">Product Company</label>
+            <input type="text" id="pCompany" name="pCompany">
+            
+            <label for="pPrice">Product Price</label>
+            <input type="text" id="pPrice" name="pPrice">
+            
+            <label for="pQty">Product Quantity</label>
+            <input type="text" id="pQty" name="pQty">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
